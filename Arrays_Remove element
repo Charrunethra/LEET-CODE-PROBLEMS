@@ -1,3 +1,5 @@
+//i/p: 3,2,2,3   val=3
+//0/p: 2         explain: [2,2,_,_]
 import java.util.*;
 
 class ArraysRemoveElement {
