@@ -1,0 +1,34 @@
+//When it accepts integer as input
+class Solution {
+    public List<List<Integer>> generate(int numRows) {
+       
+        List<List<Integer>> allrows = new ArrayList<>();
+        ArrayList<Integer> row=new ArrayList<>();
+        for(int i=0;i<numRows;i++){
+            row.add(0,1);
+            for(int j=1;j<row.size()-1;j++){
+                row.set(j,row.get(j)+row.get(j+1));
+            }
+            allrows.add(new ArrayList<Integer> (row));
+        }
+	return allrows;
+    }
+}
+
+//When it accepts long as input
+public class Solution {
+	public static ArrayList<ArrayList<Long>> printPascal(int n) {
+                 // Write your code here.
+        ArrayList<ArrayList<Long>> allrows=new ArrayList<>();
+        ArrayList<Long> row=new ArrayList<>();
+        for(int i=0;i<n;i++){
+            row.add(0,1l);
+            for(int j=1;j<row.size()-1;j++){
+                row.set(j,row.get(j)+row.get(j+1));
+            }
+            allrows.add(new ArrayList<Long>(row));
+            // or allrows.add(i,new ArrayList<Long>(row));
+        }
+        return allrows;
+	}
+}
