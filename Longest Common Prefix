@@ -1,3 +1,4 @@
+//Most efficient and best
 class Solution {
     public String longestCommonPrefix(String[] strs) {
         if (strs == null || strs.length==0)
@@ -13,7 +14,7 @@ class Solution {
     }
 }
 
-//alternate easy solution
+//alternate easy solution// best
 
 public String longestCommonPrefix(String[] strs) {
         if (strs == null || strs.length == 0)
