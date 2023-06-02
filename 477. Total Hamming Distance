@@ -1,0 +1,16 @@
+class Solution {
+    public int totalHammingDistance(int[] nums) {
+        int n = nums.length;
+        int sum = 0;
+        for(int i=0;i<n-1;i++){
+            for(int j=i+1;j<n;j++){
+                int x = nums[i];
+                int y = nums[j];
+                int dist = x ^ y;
+                int b = Integer.bitCount(dist);
+                sum+=b;
+            }
+        }
+        return sum;
+    }
+}
